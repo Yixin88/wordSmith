@@ -5,23 +5,23 @@
   </head>
   <body>
     <h1>WordSmith</h1>
-    <div class="content_Container">
-      <div class="setColor_Container">
-        <button onclick="setColor()">Set Color</button>
-        <input type="value" name="" id="">
-      </div>
-      <div class="button_Container">
-        <button onclick="toggleUnderline()">Underline</button>
-        <button onclick="toggleItalic()">Italic</button>
-        <button onclick="toggleBold()">Bold</button>
-        <button onclick="toggleMonospace()">Monospace</button>
-        <button onclick="removeFormat()">Remove Format</button>
-      </div>
-      <div>
-        <input id="words" style="height:100px;width:250px"
-          placeholder="write your text here" />
-      </div>
+    <div class="flex_Container">
+        <div class="content_Container">
+            <input type="value" name="" id="colorInput" placeholder="font color e.g. red">
+            <button id="colorBtn" onclick="setColor()">Set Color</button>
+            <div class="button_Container">
+                <button onclick="toggleUnderline()">Underline</button>
+                <button onclick="toggleItalic()">Italic</button>
+                <button onclick="toggleBold()">Bold</button>
+                <button onclick="toggleMonospace()">Monospace</button>
+            </div>
+            <button id="removeBtn" onclick="removeFormat()">Remove Format</button>
+            <button id="clearBtn" onclick="clear()">Clear</button>
+            <div class="text_input">
+                <input id="words" placeholder="write your text here" />
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
   </body>
 </html>
