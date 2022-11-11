@@ -12,3 +12,7 @@ function toggleUnderline() {
 function toggleItalic() {
 el.classList.toggle("italic");
 }
+
+function toggleBold() {
+    el.classList.toggle("bold");
+  }
