@@ -40,3 +40,7 @@ function removeFormat() {
     el.classList.remove("underline", "italic", "bold", "mono");
     el.style.color = "black";
 }
+
+function clear() {
+    el.value = "";
+}
