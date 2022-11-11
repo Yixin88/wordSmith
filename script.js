@@ -8,3 +8,7 @@ function setColor() {
 function toggleUnderline() {
     el.classList.toggle("underline");
   }
+
+function toggleItalic() {
+el.classList.toggle("italic");
+}
