@@ -1,24 +1,39 @@
 const el = document.querySelector("#words");
 
+function checkEmpty() {
+    if (el.value === "") {
+        return false;
+    };
+    return true;
+}
+
 function setColor() {
     const input = document.querySelectorAll("input")[0];
     el.style.color = input.value;
 }
 
 function toggleUnderline() {
-    el.classList.toggle("underline");
+    if (checkEmpty()) {
+        el.classList.toggle("underline");
+    }
 }
 
 function toggleItalic() {
-    el.classList.toggle("italic");
+    if (checkEmpty()) {
+        el.classList.toggle("italic");
+    }
 }
 
 function toggleBold() {
-    el.classList.toggle("bold");
+    if (checkEmpty()) {
+        el.classList.toggle("bold");
+    }
 }
 
 function toggleMonospace() {
-    el.classList.toggle("mono");
+    if (checkEmpty()) {
+        el.classList.toggle("mono");
+    }
 }
 
 function removeFormat() {
