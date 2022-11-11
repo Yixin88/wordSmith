@@ -16,3 +16,7 @@ el.classList.toggle("italic");
 function toggleBold() {
     el.classList.toggle("bold");
   }
+
+function toggleMonospace() {
+el.classList.toggle("mono");
+}
