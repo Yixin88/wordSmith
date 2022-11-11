@@ -41,6 +41,6 @@ function removeFormat() {
     el.style.color = "black";
 }
 
-function clear() {
+function clearInput() {
     el.value = "";
 }
