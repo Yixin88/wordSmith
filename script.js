@@ -11,7 +11,7 @@ function checkToggle(className, childrenName) {
     if (el.classList.contains(className)) {
         document.querySelector(".button_Container").children[childrenName].style.backgroundColor = "darkBlue";
     } else {
-        document.querySelector(".button_Container").children[childrenName].style.backgroundColor = "#AA96DA";
+        document.querySelector(".button_Container").children[childrenName].style.backgroundColor = "";
     }
 }
 
@@ -52,7 +52,7 @@ function removeFormat() {
     el.classList.remove("underline", "italic", "bold", "mono");
     el.style.color = "black";
     document.querySelectorAll(".button_Container button").forEach(btn => {
-        btn.style.backgroundColor = "#AA96DA";
+        btn.style.backgroundColor = "";
     })
 }
 
