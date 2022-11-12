@@ -42,17 +42,13 @@ h1 {
     text-decoration: underline;
 }
 
-.mono {
-    font-family: monospace;
-}
-
 .flex_Container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#words {
+.words {
     border-radius: 10px;
     margin: 5px;
     border: 1px solid black;
@@ -60,6 +56,11 @@ h1 {
     height: 88%;
     width: 250px;
     font-size: 20px;
+    font-family: "";
+}
+
+.mono {
+    font-family: monospace;
 }
 
 .content_Container {
