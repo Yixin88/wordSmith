@@ -1,4 +1,4 @@
-const el = document.querySelector("#words");
+const el = document.querySelector(".words");
 
 function checkEmpty() {
     if (el.value === "") {
